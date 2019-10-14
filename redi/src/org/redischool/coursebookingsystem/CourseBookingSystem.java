@@ -42,7 +42,7 @@ public class CourseBookingSystem {
                 System.out.println("You are booked for the following course:");
                 System.out.println(selectedCourse.toString());
                 System.out.println("List of participants:");
-                System.out.println(selectedCourse.createParticipantList());
+                System.out.println(selectedCourse.createParticipantList(student));
             } else {
                 System.out.println("Sorry, course booking was not successful :-(");
             }

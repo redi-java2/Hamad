@@ -20,13 +20,17 @@ class Course {
     }
 
     boolean book(Student student) {
-        // Please complete the body of method book!
+        if (student!=null && openSpaces > 0){
+            openSpaces = openSpaces -1;
+            return true;
+        }
         return false;
     }
-
-    String createParticipantList(){
-        String participantList="";
-        // Please complete the body of method createParticipantList!
+    String participantList="";
+    public String createParticipantList(Student std){
+        if (std != null) {
+            participantList = participantList + std.toString() + '\n';
+        }
         return participantList;
     }
 }
