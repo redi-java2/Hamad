@@ -34,4 +34,3 @@ class Course {
         return participantList;
     }
 }
-//New Comment for github checking
